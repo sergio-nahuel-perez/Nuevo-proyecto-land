@@ -1,18 +1,31 @@
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --text-color: #333;
-  --background-color: #8940c4;
+  --primary-color: #483858;
+  --secondary-color: #341736;
+  --text-color: #26122b;
+  --background-color: #342840;
+  --text-button-color: #7447a8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel Decorative", serif;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 header {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 65px;
   padding: 0px 30px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .logo {
@@ -52,4 +65,73 @@ header {
   margin-right: 0;
   color: var(--text-color);
   cursor: pointer;
+}
+
+.main {
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  width: 100%;
+}
+
+#hero {
+  margin-top: 65px;
+  padding: 70px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.hero-info p {
+  font-size: 25px;
+  width: 70%;
+  color: var(--text-color);
+}
+
+.hero-info a {
+  color: var(--text-button-color);
+  width: 120px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  background: var(--text-color);
+}
+
+.hero-card {
+  width: 300px;
+  background: var(--secondary-color);
+  padding: 10px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
