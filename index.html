@@ -1,25 +1,127 @@
 <!DOCTYPE html>
+<!-- victorio1980 discord del profesor -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuevo-proyecto-land</title>
     <link rel="stylesheet" href="proyecto.Css" />
+    <link rel="stylesheet" href="mediaqueries.css">
   </head>
   <body>
     <!-- navbar -->
     <header>
-      <img src="images/logo-removebg.png" alt="logo" class="logo" />
+      <img src="images/logo-removebg.png" alt="logo sagitario esoterico" class="logo"/>
       <nav class="navbar">
+        <!-- agregamos el label con la imagen del menu -->
+         <label for="menu-toggle" class="menu-label">
+          <img src="images/menu-hamburguesa-caldero.png" alt="menu-icon">
+         </label>
+
+         <!-- agrego el input y lo linkeamos al label -->
+          <input type="checkbox" id="menu-toggle">
+          <!-- comienza el menu -->
+
         <ul class="navbar-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">Descubre</a></li>
+          <li><a href="#">Productos</a></li>
           <li><a href="#">Contactanos</a></li>
-          <li><a href="#">Blog</a></li>
           <li><a href="#">Biblioteca</a></li>
           <li>
+
+            <!-- agrego input y label para el carrito -->
+             <label for="cart-toggle" class="cart-icon">
+              <img src="images/cart-shopping-solid.svg" alt="carrito de compras" class="cart-icon">
+             </label>
+             <input type="checkbox" id="cart-toggle">
+
+            <!-- agrego el carrito -->
+             <div class="cart">
+              <h2>Tus productos</h2>
+
+                <div class="cart-item">
+                <img src="images/agua-florida.png" alt="productos del carrito">
+                  <div class="item-info">
+                    <h3 class="item-title">Agua florida</h3>
+                    <p class="item-bid">precio</p>
+                    <span class="item-price">$7.000</span>
+                  </div>
+                  <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                  </div>
+              </div>
+
+              <div class="cart-item">
+                <img src="images/agua-florida.png" alt="productos del carrito">
+                  <div class="item-info">
+                    <h3 class="item-title">Agua florida</h3>
+                    <p class="item-bid">precio</p>
+                    <span class="item-price">$7.000</span>
+                  </div>
+                  <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                  </div>
+              </div>
+
+              <div class="cart-item">
+                <img src="images/agua-florida.png" alt="productos del carrito">
+                  <div class="item-info">
+                    <h3 class="item-title">Agua florida</h3>
+                    <p class="item-bid">precio</p>
+                    <span class="item-price">$7.000</span>
+                  </div>
+                  <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                  </div>
+              </div>
+
+              <div class="cart-item">
+                <img src="images/agua-florida.png" alt="productos del carrito">
+                  <div class="item-info">
+                    <h3 class="item-title">Agua florida</h3>
+                    <p class="item-bid">precio</p>
+                    <span class="item-price">$7.000</span>
+                  </div>
+                  <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                  </div>
+              </div>
+
+              <div class="cart-item">
+                <img src="images/agua-florida.png" alt="productos del carrito">
+                  <div class="item-info">
+                    <h3 class="item-title">Agua florida</h3>
+                    <p class="item-bid">precio</p>
+                    <span class="item-price">$7.000</span>
+                  </div>
+                  <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                  </div>
+              </div>
+
+              <span class="divider"></span>
+
+              <div class="cart-total">
+                <p>Total: </p>
+                <span>35.000</span>
+              </div>
+              <button class="btn-add">Comprar</button>
+                
+             </div>
+
             <img
-              src="images/cart-shopping-solid.svg"
+              src="images/cart-hamburguesa.png"
               alt="shopping cart"
               class="cart-icon"
             />
@@ -116,5 +218,335 @@
         </div>
       </div>
     </section>
+
+    <!-- third section products-servicios (whos the reflection witin) * -->
+    <section id="product-container">
+      <h2>Who's the reflection within?</h2>
+
+      <div class="services">
+        <div class="selection-services">
+          <img src="images/consultas-tarot.png" alt="consultas-de-tarot" />
+          <div class="info-top">
+            <p>Consultas de Tarot</p>
+            <button class="btn"><a href="#">Agenda tu consulta</a></button>
+          </div>
+        </div>
+
+        <div class="selection-services">
+          <img
+            src="images/consultas-astrologia.png"
+            alt="crea-tu-carta-astral"
+          />
+          <div class="info-top">
+            <p>Carta Astral</p>
+            <button class="btn"><a href="#">Crea tu carta astral</a></button>
+          </div>
+        </div>
+
+        <div class="selection-services">
+          <img src="images/curso-magia.png" alt="aprende-brujeria" />
+          <div class="info-top">
+            <p>Aprende Brujeria Tradicional</p>
+            <button class="btn">Proximamente</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- categories -->
+    <section id="discover">
+      <h2>Comienza a armar tu botica</h2>
+      <div class="categories">
+        <button class="category active">Todos los productos</button>
+        <button class="category">Sol</button>
+        <button class="category">Luna</button>
+        <button class="category">Mercurio</button>
+        <button class="category">Venus</button>
+        <button class="category">Marte</button>
+        <button class="category">Jupiter</button>
+        <button class="category">Saturno</button>
+        <button class="category">Urano</button>
+        <button class="category">Neptuno</button>
+        <button class="category">Pluton</button>
+      </div>
+
+      <!-- productos de la tienda -->
+
+      <div class="productos-compra">
+        <div class="info-producto">
+          <img src="images/grimorios.png" alt="bitacoras" />
+          <h3>Bitacoras</h3>
+          <p>
+            Obtene tu propia bitacora para tomar nota de todas tus recetas
+            magicas, tambien podes usarla como bitacora de los sueños o como tu
+            creatividad quiera.
+          </p>
+          <div class="info-price">
+            <p>$25.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/aceite-de-altar.png" alt="aceite-de-altar" />
+          <h3>Aceite de altar</h3>
+          <p>
+            Que nunca te falte el aceite de altar para ungir tus velas,
+            espacios, o usarlo como complemento en tus practicas.
+          </p>
+          <div class="info-price">
+            <p>$10.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/agua-florida.png" alt="agua-florida" />
+          <h3>Agua Florida</h3>
+          <p>
+            Mejora tu conección, purifica tu espacio, mejora tu estado de animo
+            con el uso del agua florida
+          </p>
+          <div class="info-price">
+            <p>$7.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/agua-de-rosas.png" alt="agua-de-rosas" />
+          <h3>Agua de Rosas</h3>
+          <p>
+            Potencia tus rituales de amor con Agua de Rosas, usalo como ofrenda,
+            etc.
+          </p>
+          <div class="info-price">
+            <p>$7.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/miel-de-brujas.png" alt="miel-de-brujas" />
+          <h3>Miel de Brujas</h3>
+          <p>
+            Potencia tu ritual magico de amor con miel de brujas consagrado por
+            la diosa venus, usalo como ofrenda o consumelo.
+          </p>
+          <div class="info-price">
+            <p>$10.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/sal-negra.png" alt="Sal-negra" />
+          <h3>Sal Negra</h3>
+          <p>Potencia tus rituales con Sal Negra</p>
+          <div class="info-price">
+            <p>$3.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/sal-jupiter.png" alt="sal-de-jupiter" />
+          <h3>Sal de Jupiter</h3>
+          <p>Potencia tus rituales de sanacion con sal de jupiter</p>
+          <div class="info-price">
+            <p>$5.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/sal-gruesa.png" alt="sal-gruesa" />
+          <h3>Sal gruesa consagrada en luna menguante</h3>
+          <p>
+            Potencia tus rituales y recetas magicas con sal gruesa consagrada en
+            lunas menguantes de tierra
+          </p>
+          <div class="info-price">
+            <p>$5.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/sal-marina.png" alt="sal-marina" />
+          <h3>Sal Marina consagrada en luna menguante</h3>
+          <p>
+            Potencia tus rituales y recetas magicas con sal gruesa consagrada en
+            lunas menguantes de agua
+          </p>
+          <div class="info-price">
+            <p>$5.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/miel-ganesha.png" alt="miel-ganesha" />
+          <h3>Miel de Ganesha</h3>
+          <p>
+            Potencia tus rituales y recetas magicas o usa de ofrenda para
+            abundancia miel de ganesha
+          </p>
+          <div class="info-price">
+            <p>$5.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/velas-cortas.png" alt="velas" />
+          <h3>Velas cortas</h3>
+          <p>
+            No pierdas tiempo con estas velas cortas limpias y consagradas,
+            listas para usar en tus rituales
+          </p>
+          <div class="info-price">
+            <p>$300</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-producto">
+          <img src="images/velas-largas.png" alt="velas-largas" />
+          <h3>Velas largas</h3>
+          <p>
+            No pierdas tiempo con estas velar largas limpias y consagradas,
+            listas para usar en tus rituales
+          </p>
+          <div class="info-price">
+            <p>$500</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- productos de la tienda section hierbas y resinas -->
+    <section id="hierbas">
+      <h2>Hierbas y resinas Magicas</h2>
+
+      <div class="producto-hierbas">
+        <div class="info-hierbas">
+          <img src="images/hierbas-salvia.png" alt="hierbas" />
+          <h3>Salvia blanca</h3>
+          <p>Para tus comidas o preparados magicos.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/hierbas-romero.png" alt="hierbas" />
+          <h3>Romero</h3>
+          <p>Para tus comidas o preparados magicos.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/hierbas-rosas.png" alt="hierbas" />
+          <h3>Rosas</h3>
+          <p>Para tus comidas o preparados magicos.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/hierbas-jazmin.png" alt="hierbas" />
+          <h3>Jazmin</h3>
+          <p>Para tus comidas o preparados magicos.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/hierbas-lavanda.png" alt="hierbas" />
+          <h3>Lavanda</h3>
+          <p>Para tus comidas o preparados magicos.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/hierbas-laurel.png" alt="hierbas" />
+          <h3>Laurel</h3>
+          <p>Para tus comidas o preparados magicos.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/incienso.png" alt="hierbas" />
+          <h3>Incienso</h3>
+          <p>Para tus preparados magicos/ofrendas.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/sangre-de-dragon.png" alt="hierbas" />
+          <h3>Sangre de dragon</h3>
+          <p>Para tus preparados magicos/ofrendas.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/alcanfor.png" alt="hierbas" />
+          <h3>Alcanfor</h3>
+          <p>Para tus preparados magicos/ofrendas.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+        <div class="info-hierbas">
+          <img src="images/palo-santo.png" alt="hierbas" />
+          <h3>Palo santo</h3>
+          <p>Para tus preparados magicos/ofrendas.</p>
+          <div class="info-price">
+            <p>$1.000</p>
+            <button class="button"><a href="#">Agregar al carrito</a></button>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="btn-load">Ver Mas</button>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div>
+        <ul class="footer-links">
+          <li><a href="#">Terminos de uso</a></li>
+          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </div>
+      <p>Sagitario Esoterico. Todos los derechos reservados.</p>
+    </footer>
   </body>
 </html>
