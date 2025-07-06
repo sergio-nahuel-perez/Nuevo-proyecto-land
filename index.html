@@ -5,153 +5,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuevo-proyecto-land</title>
-    <link rel="stylesheet" href="proyecto.Css" />
+    <link rel="stylesheet" href="proyecto.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
   <body>
     <!-- navbar -->
-    <header>
-      <img
-        src="images/logo-removebg.png"
-        alt="logo sagitario esoterico"
-        class="logo"
-      />
+    <header class="header">
+      <img class="logo" src="images/logo-removebg.png" alt="Logo" /> 
       <nav class="navbar">
-        <!-- agregamos el label con la imagen del menu -->
-        <label for="menu-toggle" class="menu-label">
-          <img src="images/menu-hamburguesa-caldero.png" alt="menu-icon" />
-        </label>
+      <label for="menu-toggle" class="menu-label"><i class="fa-solid fa-bars"></i></i></label>
+      <input type="checkbox" id="menu-toggle" />
 
-        <!-- agrego el input y lo linkeamos al label -->
-        <input type="checkbox" id="menu-toggle" />
-        <!-- comienza el menu -->
+            <ul class="navbar-list">
+                <li><a href="#home" class="navbar-link">Home</a></li>
+                <li><a href="#discover" class="navbar-link">Descubre</a></li>
+                <li><a href="#info" class="navbar-link">Info</a></li>
+                <li><a href="#product-container" class="navbar-link">Productos</a></li>
+                <li><a href="#biblioteca" class="navbar-link">Biblioteca</a></li>
+            </ul>
+         
+      </label>
 
-        <ul class="navbar-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Descubre</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contactanos</a></li>
-          <li><a href="#">Biblioteca</a></li>
-          <li>
-            <!-- agrego input y label para el carrito -->
-            <label for="cart-toggle" class="cart-icon">
-              <img
-                src="images/cart-shopping-solid.svg"
-                alt="carrito de compras"
-                class="cart-icon"
-              />
-            </label>
+<!-- pongo por ahora para probar el carrito dentro del nav, sino lo saco  -->
+
             <input type="checkbox" id="cart-toggle" />
+                <label for="cart-toggle" class="cart-icon">
+                <img src="images/cart-shopping-solid.svg" alt="carrito" />
+                </label>
+                    <div class="cart">
+                        <h2>Tus productos</h2>
 
-            <!-- agrego el carrito -->
-            <div class="cart">
-              <h2>Tus productos</h2>
+                            <div class="cart-item">
+                                <img src="images/agua-florida.png" alt="productos del carrito" />
+                                <div class="item-info">  
+                    <h3 class="item-title">Agua florida</h3>
+                    <p class="item-bid">precio</p>
+                    <span class="item-price">$7.000</span>
 
-              <div class="cart-item">
-                <img
-                  src="images/agua-florida.png"
-                  alt="productos del carrito"
-                />
-                <div class="item-info">
-                  <h3 class="item-title">Agua florida</h3>
-                  <p class="item-bid">precio</p>
-                  <span class="item-price">$7.000</span>
+                                </div>
+        
                 </div>
-                <div class="item-handler">
-                  <span class="quantity-handler down">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-handler up">+</span>
-                </div>
-              </div>
 
-              <div class="cart-item">
-                <img
-                  src="images/agua-florida.png"
-                  alt="productos del carrito"
-                />
-                <div class="item-info">
-                  <h3 class="item-title">Agua florida</h3>
-                  <p class="item-bid">precio</p>
-                  <span class="item-price">$7.000</span>
-                </div>
-                <div class="item-handler">
-                  <span class="quantity-handler down">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-handler up">+</span>
-                </div>
-              </div>
+                    <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+                    </div>
 
-              <div class="cart-item">
-                <img
-                  src="images/agua-florida.png"
-                  alt="productos del carrito"
-                />
-                <div class="item-info">
-                  <h3 class="item-title">Agua florida</h3>
-                  <p class="item-bid">precio</p>
-                  <span class="item-price">$7.000</span>
-                </div>
-                <div class="item-handler">
-                  <span class="quantity-handler down">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-handler up">+</span>
-                </div>
-              </div>
 
-              <div class="cart-item">
-                <img
-                  src="images/agua-florida.png"
-                  alt="productos del carrito"
-                />
-                <div class="item-info">
-                  <h3 class="item-title">Agua florida</h3>
-                  <p class="item-bid">precio</p>
-                  <span class="item-price">$7.000</span>
-                </div>
-                <div class="item-handler">
-                  <span class="quantity-handler down">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-handler up">+</span>
-                </div>
-              </div>
+                 <span class="divider"></span>   
 
-              <div class="cart-item">
-                <img
-                  src="images/agua-florida.png"
-                  alt="productos del carrito"
-                />
-                <div class="item-info">
-                  <h3 class="item-title">Agua florida</h3>
-                  <p class="item-bid">precio</p>
-                  <span class="item-price">$7.000</span>
-                </div>
-                <div class="item-handler">
-                  <span class="quantity-handler down">-</span>
-                  <span class="item-quantity">1</span>
-                  <span class="quantity-handler up">+</span>
-                </div>
-              </div>
-
-              <span class="divider"></span>
-
-              <div class="cart-total">
-                <p>Total:</p>
-                <span>35.000</span>
-              </div>
-              <button class="btn-add">Comprar</button>
+                    <div class="cart-total">
+                    <p>Total:</p>
+                    <span>35.000</span>
+                    </div>
+                    
+                    
+                     <button class="btn-add">Comprar</button>
             </div>
+      </div>
 
-            <img
-              src="images/cart-hamburguesa.png"
-              alt="shopping cart"
-              class="cart-icon"
-            />
-          </li>
-        </ul>
+      <!-- Repetí según la cantidad de productos -->
+
+      
+
+      
+      
+
+
+
       </nav>
+
+      
     </header>
 
-    <!-- hero section -->
+    <!-- carrito fuera del header -->
+    <section class="cart" id="cart">
+      
+
+      
+    </section>
+
+    <!-- resto de la página (hero, secciones, footer...) sin cambios -->
+
     <main class="main">
       <section id="hero">
         <div class="hero-info">
@@ -174,7 +111,6 @@
         </div>
       </section>
     </main>
-
     <!-- second section-info -->
     <section id="info">
       <h2>What can i found behind the mirror?</h2>
@@ -323,10 +259,10 @@
 
         <div class="info-producto">
           <img src="images/agua-florida.png" alt="agua-florida" />
-          <h3>Agua Florida</h3>
+          <h3>Agua florida</h3>
           <p>
-            Mejora tu conección, purifica tu espacio, mejora tu estado de animo
-            con el uso del agua florida
+            El agua florida es el mejor complemento para rituales de limpiezas y
+            purificacion. Tiene un aroma agradable y es ideal para tu altar.
           </p>
           <div class="info-price">
             <p>$7.000</p>
@@ -557,7 +493,6 @@
     </section>
 
     <!-- footer -->
-
     <footer>
       <div>
         <ul class="footer-links">
@@ -566,7 +501,7 @@
           <li><a href="#">Soporte</a></li>
         </ul>
       </div>
-      <p>Sagitario Esoterico. Todos los derechos reservados.</p>
+      <p>© 2023 Sagitario Esotérico. Todos los derechos reservados.</p>
     </footer>
   </body>
 </html>
