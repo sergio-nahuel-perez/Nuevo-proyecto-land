@@ -7,13 +7,13 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Cinzel Decorative", serif;
-    text-decoration: none;
-    list-style-type: none;
-}  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel Decorative", serif;
+  text-decoration: none;
+  list-style-type: none;
+}
 
 /* notas: 
 *width: ancho
@@ -26,182 +26,169 @@
 
 /* header */
 header {
-    background: var(--secondary-color);   
-    width: 100%;        
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 0 30px;
-    /* para fixear/fijo en el top de la pagina */
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    box-shadow: o 8px 24px rgba(red, green, blue, alpha) (0, 0, 0, 0.2);
+  background: var(--secondary-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  /* para fixear/fijo en el top de la pagina */
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-shadow: o 8px 24px rgba(red, green, blue, alpha) (0, 0, 0, 0.2);
 }
 
 .logo {
-    height: 70px;
+  height: 70px;
 }
 
 #menu-toggle {
-    display: none; /* ocultar checkbox */
+  display: none; /* ocultar checkbox */
 }
 
 #cart-toggle {
-    display: none; /* ocultar checkbox */
+  display: none; /* ocultar checkbox */
 }
 
-
 .menu-label img {
-    width: 30px;
-    height: auto;
-    display: none; /* ocultar imagen por defecto */
+  width: 30px;
+  height: auto;
+  display: none; /* ocultar imagen por defecto */
 }
 
 .navbar,
 .navbar-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar {
-    gap: 150px;
+  gap: 150px;
 }
 
 .navbar i {
-    font-size: 30px;
-    display: none; /* ocultar icono de menu hamburguesa por defecto */
+  font-size: 30px;
+  display: none; /* ocultar icono de menu hamburguesa por defecto */
 }
 
 .navbar-list {
-    gap: 30px;
-
+  gap: 30px;
 }
 
 .navbar-list a {
-    color: var(--primary-color);
-    font-size: 18px;
-    font-weight: 70;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 70;
 }
 
 .navbar-list li:first-child a {
-    color: var(--text-button-color);
-    font-weight: 600;
+  color: var(--text-button-color);
+  font-weight: 600;
 }
 
 .cart-icon img {
-    font-weight: 600;
-    border-radius: 10px;
-    height: 30px;
-    padding: 5px 19px;
-    margin-right: 1rem;
-    color: var(--primary-color);
-    cursor: pointer;
-    display: inline-block; /* mostrar icono de carrito */
-
+  font-weight: 600;
+  border-radius: 10px;
+  height: 30px;
+  padding: 5px 19px;
+  margin-right: 1rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: inline-block; /* mostrar icono de carrito */
 }
 
 /* calculo que va a salir el menu hamburguesa desktop y agregado para mediaqueries */
 
 .cart {
-    position: absolute;
-    top: 65px;
-    right: 0;
-    padding: 50px 30px;
-    background: var(--background-color);
-    border-left: 1px solid var(--primary-color);
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    height: calc(100vh - 65px);
-    overflow-y: scroll;
-    z-index: 2;
-
+  position: absolute;
+  top: 65px;
+  right: 0;
+  padding: 50px 30px;
+  background: var(--background-color);
+  border-left: 1px solid var(--primary-color);
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  z-index: 2;
 }
 
 .cart-total p {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .cart-total span {
-    color: var(--text-button-color);
-    font-weight: 400;
-    font-size: 10px;
-    
+  color: var(--text-button-color);
+  font-weight: 400;
+  font-size: 10px;
 }
 
 #cart-toggle:checked ~ .cart {
-    display: flex;
-
+  display: flex;
 }
 
 .cart-item img {
-    width: 50px;
-    height: auto;
-
+  width: 50px;
+  height: auto;
 }
 
 .cart-item {
-    background-color: var(--secondary-color);
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-
+  background-color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .btn-add {
-    background-color: var(--text-button-color);
-    border: none;
-    padding: 10px 25px;
-    color: var(--text-color);
-    border-radius: 10px;
-    cursor: pointer;
-
+  background-color: var(--text-button-color);
+  border: none;
+  padding: 10px 25px;
+  color: var(--text-color);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .main {
-    background: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color);
-    width: 100%;
-
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  width: 100%;
 }
 
 /* section hero */
 
 #hero {
-    margin-top: 65px;
-    padding: 70px;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  margin-top: 65px;
+  padding: 70px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
 }
 
 .hero-info h1 {
-    font-size: 48px;
-    width: 80%;
-    min-width: 500px;
-    font-weight: 800;
-    color: var(--text-color);
+  font-size: 48px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  color: var(--text-color);
 }
 
 .hero-info p {
@@ -358,7 +345,6 @@ header {
 .btn a {
   color: var(--text-color);
 }
-
 
 /* categories */
 #discover {
@@ -573,5 +559,3 @@ footer p {
   justify-content: center;
   gap: 20px;
 }
-
-
